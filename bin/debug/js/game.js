@@ -422,7 +422,7 @@ Main.prototype = {
 		credits.style.width = "100%";
 		credits.style.textAlign = "center";
 		credits.style.color = "#333333";
-		credits.innerHTML = "Created for <a href=" + "http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=42276" + " target=\"_blank\"> " + "Ludum Dare 34" + "</a> using <a href=" + "http://haxe.org/" + " target=\"_blank\">Haxe</a> and <a href=" + "https://github.com/mrdoob/three.js/" + " target=\"_blank\">three.js</a>. Get the code <a href=" + "https://github.com/Tw1ddle/Ludum-Dare-34" + " target=\"_blank\">here</a>. Select colored words for points.";
+		credits.innerHTML = "Created for <a href=" + "http://ludumdare.com/compo/ludum-dare-34/?uid=42276" + " target=\"_blank\"> " + "Ludum Dare 34" + "</a> using <a href=" + "http://haxe.org/" + " target=\"_blank\">Haxe</a> and <a href=" + "https://github.com/mrdoob/three.js/" + " target=\"_blank\">three.js</a>. Get the code <a href=" + "https://github.com/Tw1ddle/Ludum-Dare-34" + " target=\"_blank\">here</a>. Select colored words for points.";
 		gameDiv.appendChild(credits);
 		this.renderer = new THREE.WebGLRenderer({ antialias : false});
 		this.renderer.sortObjects = true;
@@ -2853,7 +2853,7 @@ Main.GAME_VIEWPORT_WIDTH = 800;
 Main.GAME_VIEWPORT_HEIGHT = 500;
 Main.REPO_URL = "https://github.com/Tw1ddle/Ludum-Dare-34";
 Main.TWITTER_URL = "https://twitter.com/Sam_Twidale";
-Main.LUDUM_DARE_URL = "http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=42276";
+Main.LUDUM_DARE_URL = "http://ludumdare.com/compo/ludum-dare-34/?uid=42276";
 Main.WEBSITE_URL = "http://samcodes.co.uk/";
 Main.HAXE_URL = "http://haxe.org/";
 Main.THREEJS_URL = "https://github.com/mrdoob/three.js/";

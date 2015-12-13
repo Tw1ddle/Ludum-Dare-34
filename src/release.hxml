@@ -1,0 +1,8 @@
+--no-traces
+
+-lib sure
+-lib msignal
+-lib markov-namegen
+-lib actuate
+
+-js ../bin/release/js/game.js

@@ -1,0 +1,8 @@
+-debug
+
+-lib sure
+-lib msignal
+-lib markov-namegen
+-lib actuate
+
+-js ../bin/debug/js/game.js

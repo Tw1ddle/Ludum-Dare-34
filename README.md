@@ -2,11 +2,15 @@
 
 My entry for Ludum Dare 34, the world's largest online game jam.
 
-Play it [here](TODO) or visit the Ludum Dare [submission page](TODO).
+Play it [here](http://samcodes.itch.io/the-days-of-christmas) or visit the Ludum Dare [submission page](http://ludumdare.com/compo/ludum-dare-34/?uid=42276).
 
 ### About
 
-The Days Of Christmas is a HTML5/WebGL game made in 24 hours for Ludum Dare 34. The theme was either growth or two-button gameplay. I originally planned to grow a Christmas tree out of text, but decided to make it about selecting text.
+The Days Of Christmas is a HTML5/WebGL game written in Haxe, and was made in 18 hours for Ludum Dare 34.
+
+The theme was growth or two-button gameplay. I originally planned to grow a Christmas tree out of text, but fell back to selecting text when I realized there wasn't time for that. It's unfinished. The lyrics of the main verse "grow", and at time of writing there are 12 days to Christmas.
+
+The gameplay amounts to clicking colored text, with more time it could have been more interesting.
 
 ### Screenshots
 
@@ -16,7 +20,7 @@ The Days Of Christmas is a HTML5/WebGL game made in 24 hours for Ludum Dare 34. 
 
 ### Dev Log
 #### December
-* 13th: The Compo, made in 24 hours.
+* 13th: The Compo, made in 18 hours.
 
 ### Credits
 

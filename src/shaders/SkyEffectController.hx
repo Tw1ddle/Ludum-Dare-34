@@ -5,7 +5,7 @@ import markov.util.FileReader;
 import motion.*;
 import three.Vector3;
 
-class SkyShader {	
+class SkyShader {
 	public static var uniforms = {
 		luminance: { type: "f", value:1.0 },
 		turbidity: { type: "f", value:1.0 },
@@ -28,8 +28,8 @@ class SkyShader {
 		tonemapWeighting: { type: "f", value:1000.0 }
 	};
 	
-	public static var vertexShader = FileReader.readFile("shaders/glsl/sky.vertex");
-	public static var fragmentShader = FileReader.readFile("shaders/glsl/sky.fragment");
+	public static var vertexShader = FileReader.readFileAsString("shaders/glsl/sky.vertex");
+	public static var fragmentShader = FileReader.readFileAsString("shaders/glsl/sky.fragment");
 }
 
 class SkyEffectController {
@@ -508,7 +508,7 @@ class SkyEffectController {
 		});
 	}
 	
-	public function addGUIItem(c:SkyEffectController, parentGui:GUI):Void {		
+	public function addGUIItem(c:SkyEffectController, parentGui:GUI):Void {
 		var controller:SkyEffectController = cast c;
 		
 		var updateValues = function(t:Dynamic) {

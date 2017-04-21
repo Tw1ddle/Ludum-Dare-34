@@ -30,10 +30,7 @@ import TransformingText.TransformingLetter;
 import TransformingText.TweeningTransformingText;
 import webgl.Detector;
 import webgl.Detector.WebGLSupport;
-
-using markov.util.ArrayExtensions;
-using markov.util.FloatExtensions;
-using IntExtensions;
+using markov.util.IntExtensions;
 
 class Main {
 	public static inline var DEGREES_TO_RAD:Float = 0.01745329;
@@ -112,7 +109,7 @@ class Main {
 	
 	private inline function onWindowLoaded():Void {
 		// Attach game div
-		gameAttachPoint = Browser.document.getElementById("game");		
+		gameAttachPoint = Browser.document.getElementById("game");
 		var gameDiv = Browser.document.createElement("attach");
 		gameAttachPoint.appendChild(gameDiv);
 		
@@ -222,7 +219,7 @@ class Main {
 					skyEffectController.redSunset(5);
 				case 60:
 					skyEffectController.stellarDawn(3);
-				case _:				
+				case _:
 			}
 			lyricLinesHandled++;
 			
@@ -275,7 +272,7 @@ class Main {
 					signal_selectableClicked.dispatch(selectable);
 					return;
 				}
-			}			
+			}
 		});
 		
 		// Mouse events
@@ -312,9 +309,13 @@ class Main {
 		return score;
 	}
 	
+	private inline function clamp(value:Float, lower:Float, upper:Float) {
+		return value < lower ? lower : value > upper ? upper : value;
+	}
+	
 	private inline function updateMousePosition(x:Float, y:Float):Void {
-		pointer.x = FloatExtensions.clamp(((x - gameAttachPoint.offsetLeft) / gameAttachPoint.clientWidth) * 2 - 1, -1, 1);
-		pointer.y = FloatExtensions.clamp(-((y - gameAttachPoint.offsetTop) / gameAttachPoint.clientHeight) * 2 + 1, -1, 1);
+		pointer.x = clamp(((x - gameAttachPoint.offsetLeft) / gameAttachPoint.clientWidth) * 2 - 1, -1, 1);
+		pointer.y = clamp(-((y - gameAttachPoint.offsetTop) / gameAttachPoint.clientHeight) * 2 + 1, -1, 1);
 	}
 	
 	private function animate(time:Float):Void {
@@ -483,7 +484,7 @@ class LyricsText extends three.Group {
 				
 				if (textsIndex < texts[textsIndex].length) {
 					textsIndex++;
-					lyricIndex = 0;	
+					lyricIndex = 0;
 					startTransform();
 				} else {
 					signal_allComplete.dispatch();
@@ -564,7 +565,7 @@ class SelectableText extends three.Group {
 		letter.material.opacity = 0;
 		Actuate.tween(letter.material, 1, { opacity: 1 } ).ease(Expo.easeInOut);
 		
-		Actuate.tween(this.position, 5, { x: -2331 + Math.random() * 4386, y: -340 + Math.random() * 1600, z: -5442 } ).ease(Expo.easeInOut).onComplete(function():Void {			
+		Actuate.tween(this.position, 5, { x: -2331 + Math.random() * 4386, y: -340 + Math.random() * 1600, z: -5442 } ).ease(Expo.easeInOut).onComplete(function():Void {
 			Actuate.tween(letter.material, 1, { opacity: 0 } ).ease(Expo.easeInOut).onComplete(function():Void {
 				if(!clicked) {
 					signal_complete.dispatch();

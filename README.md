@@ -1,5 +1,7 @@
 # The Days Of Christmas
 
+[![Build Status](https://img.shields.io/travis/Tw1ddle/Ludum-Dare-34.svg?style=flat-square)](https://travis-ci.org/Tw1ddle/Ludum-Dare-34)
+
 My entry for Ludum Dare 34, the world's largest online game jam.
 
 Play it [here](http://samcodes.itch.io/the-days-of-christmas) or visit the Ludum Dare [submission page](http://ludumdare.com/compo/ludum-dare-34/?uid=42276).

@@ -1,10 +1,8 @@
 # The Days Of Christmas
 
-[![Build Status](https://img.shields.io/travis/Tw1ddle/Ludum-Dare-34.svg?style=flat-square)](https://travis-ci.org/Tw1ddle/Ludum-Dare-34)
-
 My entry for Ludum Dare 34, the world's largest online game jam.
 
-Play it [here](http://samcodes.itch.io/the-days-of-christmas) or visit the Ludum Dare [submission page](http://ludumdare.com/compo/ludum-dare-34/?uid=42276).
+Play it [here](https://samcodes.itch.io/the-days-of-christmas).
 
 ### About
 
@@ -26,10 +24,10 @@ The gameplay amounts to clicking colored text, with more time it could have been
 
 ### Credits
 
-This project is written using the [Haxe](http://haxe.org/) programming language and depends on:
+This project is written using the [Haxe](https://haxe.org/) programming language and depends on:
 
 * [three.js](https://github.com/mrdoob/three.js) for rendering.
 * Haxiomic's [three.js](https://github.com/haxiomic/three-js-haxe-externs) Haxe externs.
-* Joshua Granick's [actuate](http://lib.haxe.org/p/actuate) tweening library.
+* Joshua Granick's [actuate](https://lib.haxe.org/p/actuate) tweening library.
 * Luke Moody's [ShaderParticleEngine](https://github.com/squarefeet/ShaderParticleEngine) particle engine and editor for three.js.
-* Massive Interactive's [msignal](http://lib.haxe.org/p/msignal/) signals library.
+* Massive Interactive's [msignal](https://lib.haxe.org/p/msignal/) signals library.
